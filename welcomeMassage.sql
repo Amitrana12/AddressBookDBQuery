@@ -28,3 +28,8 @@ insert into AddressBook values
 ('Gaurabh','Butola','kotewser.','Ruderperyag','UK',895154,'9875141545');
 select * from AddressBook
 
+--[UC4]
+
+update AddressBook
+set address = 'Awas vikas colony 487'
+where first_name = 'Amit' AND last_name = 'Rana' ;
