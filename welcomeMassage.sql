@@ -39,3 +39,9 @@ where first_name = 'Amit' AND last_name = 'Rana' ;
 delete from AddressBook
 where first_name = 'Gaurabh' AND last_name = 'Butola';
 
+--[UC6]
+
+select * from AddressBook 
+where city = 'Ruderperyag';
+select * from AddressBook 
+where state = 'UK';
