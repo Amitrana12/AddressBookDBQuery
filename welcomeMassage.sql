@@ -54,3 +54,9 @@ group by city
 select state,COUNT(state) as total_count
 from AddressBook 
 group by state
+
+ --[UC8]
+
+select * from AddressBook 
+where city = 'Kotdwar'
+order by first_name;
