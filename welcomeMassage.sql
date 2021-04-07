@@ -33,3 +33,9 @@ select * from AddressBook
 update AddressBook
 set address = 'Awas vikas colony 487'
 where first_name = 'Amit' AND last_name = 'Rana' ;
+
+--[UC5]
+
+delete from AddressBook
+where first_name = 'Gaurabh' AND last_name = 'Butola';
+
