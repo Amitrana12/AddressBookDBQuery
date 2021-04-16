@@ -90,6 +90,10 @@ select COUNT(addresd_type)as tootal_count from AddressBook where addresd_type='f
 select COUNT(addresd_type)as tootal_count from AddressBook where addresd_type='friends'
 select COUNT(addresd_type)as tootal_count from AddressBook where addresd_type='profession'
 
+--[UC11]
 
+insert into AddressBook values
+('sheetal','Rana','lokandwala','mumbai.','MH',265356,'9879325425' ,'Addressbook4', 'family'),
+('neha','Semwal','new mumbai','mumbai.','MH',548512,'9876543210','Addressbook4', 'friends');
 
 
