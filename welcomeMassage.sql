@@ -20,12 +20,12 @@ create table AddressBook
 --[UC3]
 
 insert into AddressBook values
-('Amit','Rana','Awas vikas colony.','Rishikesh','UK',265356,'8979325434'),
-('Sumit','Semwal','kali mandir.','Ruderperyag','UK',548512,'9876543210'),
-('Naman','Dhiyani','puliya.','Devperyag','UK',546522,'8976543210'),
-('Aman','Rawat','jhanda choak.','Kotdwar','UK',985151,'8755423025'),
-('Saurabh','Sajwan',' ghantagher.','Dehradun','UK',26232,'7856235620'),
-('Gaurabh','Butola','kotewser.','Ruderperyag','UK',895154,'9875141545');
+('Anil','Rana','Awas colony.','Rishikesh','UK',265356,'8979325425'),
+('Sunil','Semwal','kali mandir.','Ruderperyag','UK',548512,'9876543210'),
+('chaman','Dhiyani','puliya.','Devperyag','UK',546522,'8976543210'),
+('Raman','Rawat','jhanda choak.','Kotdwar','UK',985151,'8755423025'),
+('Saurabh','gupta',' ghantagher.','Dehradun','UK',26232,'7856235620'),
+('Gaurabh','Rawat','kotewser.','Ruderperyag','UK',895154,'9875141545');
 select * from AddressBook
 
 --[UC4]
@@ -60,3 +60,30 @@ group by state
 select * from AddressBook 
 where city = 'Kotdwar'
 order by first_name;
+
+
+--[UC9]
+
+Alter table Addressbook
+ADD addressbook_name varchar(20) not null default 'AddressBook'; 
+
+alter table Addressbook
+add addresd_type varchar(20) not null default 'friends';
+
+update Addressbook set state='UP' where city='Ruderperyag'
+
+update Addressbook set addressbook_name='Addressbook1' where city='Rishikesh'
+update Addressbook set addressbook_name='Addressbook2' where city='Ruderperyag'
+update Addressbook set addressbook_name='Addressbook3' where city='Devperyag'
+update Addressbook set addressbook_name='Addressbook4' where city='Kotdwar'
+update Addressbook set addressbook_name='Addressbook5' where city='Dehradun'
+select * from AddressBook
+update Addressbook set addresd_type='family' where last_name='Rana'
+update Addressbook set addresd_type='profession' where last_name='Rawat'
+
+select first_name , last_name from Addressbook where addressbook_name='Addressbook5'
+select * from AddressBook where addresd_type='family'
+
+
+
+
