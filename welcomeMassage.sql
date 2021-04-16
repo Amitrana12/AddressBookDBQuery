@@ -85,5 +85,11 @@ select first_name , last_name from Addressbook where addressbook_name='Addressbo
 select * from AddressBook where addresd_type='family'
 
 
+--[UC10]
+select COUNT(addresd_type)as tootal_count from AddressBook where addresd_type='family'
+select COUNT(addresd_type)as tootal_count from AddressBook where addresd_type='friends'
+select COUNT(addresd_type)as tootal_count from AddressBook where addresd_type='profession'
+
+
 
 
