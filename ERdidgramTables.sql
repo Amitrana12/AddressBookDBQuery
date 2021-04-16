@@ -63,8 +63,6 @@ insert into Type values
 (2, 'Friends'),
 (3, 'Profession')
 
-select * from Type;
-
 alter table PersonContactDetails
 add CityID int
 references City(city_id)
